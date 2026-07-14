@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="description" content="RSS Jigani - Internal Portal for Vasati, Shakha & Milan information" />
+<meta name="theme-color" content="#FF7A00" />
+<title>RSS Jigani — Internal Portal</title>
+<link rel="icon" href="/assets/rss-logo.png" type="image/png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+Kannada:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/portal.css?v=20260714" />
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div id="loader" class="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <img src="/assets/rss-logo.png" alt="RSS Logo" class="loader-logo" />
+    <h1 class="loader-title">RSS Jigani</h1>
+    <div class="loader-bar"><span></span></div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="#top" class="brand">
+      <img src="/assets/rss-logo.png" alt="RSS Jigani logo" class="brand-logo" />
+      <span class="brand-text" data-i18n="brand">RSS Jigani</span>
+    </a>
+    <div class="lang-toggle" role="tablist" aria-label="Language toggle">
+      <button role="tab" class="lang-btn" data-lang="kn" aria-selected="false">ಕನ್ನಡ</button>
+      <button role="tab" class="lang-btn active" data-lang="en" aria-selected="true">English</button>
+      <span class="lang-slider" aria-hidden="true"></span>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Hero">
+    <img src="/assets/bharat-mata.jpg" alt="Bharat Mata" class="hero-bg" loading="eager" />
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <img src="/assets/rss-logo.png" alt="RSS emblem" class="hero-logo" />
+      <h1 class="hero-title" data-i18n="hero_title">RSS Jigani</h1>
+      <p class="hero-sub kn" data-i18n="hero_sub">ರಾಷ್ಟ್ರೀಯ ಸ್ವಯಂಸೇವಕ ಸಂಘ</p>
+      <p class="hero-tag" data-i18n="hero_tag">Jigani</p>
+    </div>
+    <div class="hero-scroll" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section" id="stats-section">
+    <div class="container">
+      <header class="section-head">
+        <h2 data-i18n="stats_title">Statistics at a Glance</h2>
+        <p data-i18n="stats_sub">Live snapshot from official Vasati records</p>
+      </header>
+      <div class="stats-grid" id="statsGrid"></div>
+    </div>
+  </section>
+
+  <!-- SEARCH + VASATI -->
+  <section class="section soft" id="vasati-section">
+    <div class="container">
+      <header class="section-head">
+        <h2 data-i18n="vasati_title">Vasati Directory</h2>
+        <p data-i18n="vasati_sub">Search by Vasati, Palakaru, phone, Shakha, Milan or responsibility</p>
+      </header>
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true"><path d="M10 4a6 6 0 104.47 10.03l4.25 4.25 1.41-1.41-4.25-4.25A6 6 0 0010 4zm0 2a4 4 0 110 8 4 4 0 010-8z"/></svg>
+        <input id="searchInput" type="search" data-i18n-attr="placeholder:search_placeholder" placeholder="Search Vasati, Palakaru, phone…" aria-label="Search" />
+        <button id="clearSearch" class="clear-btn" aria-label="Clear">×</button>
+      </div>
+      <div class="vasati-scroll">
+        <div class="vasati-grid" id="vasatiGrid"></div>
+      </div>
+      <p id="noResults" class="no-results" hidden data-i18n="no_results">No matching records found.</p>
+    </div>
+  </section>
+
+  <!-- SUMMARY TABLE -->
+  <section class="section" id="summary-section">
+    <div class="container">
+      <header class="section-head">
+        <h2 data-i18n="summary_title">Shakha & Milan Summary</h2>
+        <p data-i18n="summary_sub">Location-wise Shakha and Milan distribution</p>
+      </header>
+      <div class="table-wrap glass">
+        <table class="summary-table">
+          <thead>
+            <tr>
+              <th data-i18n="col_location">Location</th>
+              <th data-i18n="col_shakha">Shakha</th>
+              <th data-i18n="col_milan">Milan</th>
+              <th data-i18n="col_total">Total</th>
+              <th data-i18n="col_upavasti_count">Upa Vasti</th>
+            </tr>
+          </thead>
+          <tbody id="summaryBody"></tbody>
+          <tfoot id="summaryFoot"></tfoot>
+        </table>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- UPA VASTI MODAL -->
+<div id="upavastiModal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="upavastiModalTitle">
+  <div class="modal-backdrop"></div>
+  <div class="modal-panel">
+    <div class="modal-head">
+      <h3 id="upavastiModalTitle">Upa Vasti List</h3>
+      <button id="upavastiModalClose" class="modal-close" type="button" data-i18n-attr="aria-label:close" aria-label="Close">
+        <svg viewBox="0 0 24 24"><path d="M6.4 4.98L4.98 6.4 10.59 12l-5.6 5.6 1.4 1.4L12 13.4l5.6 5.6 1.4-1.4-5.6-5.6 5.6-5.6-1.4-1.4L12 10.59z"/></svg>
+      </button>
+    </div>
+    <div id="upavastiModalBody" class="modal-body"></div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <img src="/assets/rss-logo.png" alt="" class="footer-logo" />
+    <h3 data-i18n="brand">RSS Jigani</h3>
+    <p data-i18n="footer_note">Designed for Internal Use</p>
+    <small>© <span id="year"></span> <span data-i18n="brand">RSS Jigani</span></small>
+  </div>
+</footer>
+
+<script src="/portal.js?v=20260714"></script>
+</body>
+</html>
