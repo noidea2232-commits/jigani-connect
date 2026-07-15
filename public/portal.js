@@ -6,13 +6,13 @@
   const VASATIS = [
     {
       id: 1,
-      name: { en: "Pillaganahalli", kn: "ಪಿಲ್ಲಗನಹಳ್ಳಿ" },
+      name: { en: "Pilligaanahalli", kn: "ಪಿಲ್ಲಿಗಾನಹಳ್ಳಿ" },
       palakaru: { en: "Shri Bhimaray", kn: "ಶ್ರೀ ಭೀಮರಾಯ್" },
       phones: ["9008430163"],
       branches: [
         {
           type: "shakha",
-          name: { en: "Pillaganahalli Shakha", kn: "ಪಿಲ್ಲಗನಹಳ್ಳಿ ಶಾಖಾ" },
+          name: { en: "Pilligaanahalli Shakha", kn: "ಪಿಲ್ಲಿಗಾನಹಳ್ಳಿ ಶಾಖಾ" },
           resp: {
             en: "Shri Preetham — 7348859447, Shri Pavan Kumar — 7338429124",
             kn: "ಶ್ರೀ ಪ್ರೀತಮ್ – 7348859447, ಶ್ರೀ ಪವನ್ ಕುಮಾರ್ – 7338429124",
@@ -25,7 +25,7 @@
         { no: 3, name: { en: "Nava Bharata Nirmana School", kn: "ನವಭಾರತ ನಿರ್ಮಾಣ ಶಾಲೆ" }, pramukh: { en: "—", kn: "—" }, sangh: { en: "—", kn: "—" } },
         { no: 4, name: { en: "Vinayaka Nagar (Banashankari Temple)", kn: "ವಿನಾಯಕ ನಗರ(ಬನಶಂಕರಿ ದೇವಸ್ಥಾನ)" }, pramukh: { en: "—", kn: "—" }, sangh: { en: "—", kn: "—" } },
         { no: 5, name: { en: "Ambedkar Nagar", kn: "ಅಂಬೇಡ್ಕರ್ ನಗರ" }, pramukh: { en: "—", kn: "—" }, sangh: { en: "—", kn: "—" } },
-        { no: 6, name: { en: "Pillaganahalli Circle", kn: "ಪಿಲ್ಲಗನಹಳ್ಳಿ ಸರ್ಕಲ್" }, pramukh: { en: "—", kn: "—" }, sangh: { en: "—", kn: "—" } },
+        { no: 6, name: { en: "Pilligaanahalli Circle", kn: "ಪಿಲ್ಲಿಗಾನಹಳ್ಳಿ ಸರ್ಕಲ್" }, pramukh: { en: "—", kn: "—" }, sangh: { en: "—", kn: "—" } },
         { no: 7, name: { en: "BMTC Depot", kn: "BMTC ಡಿಪೊ" }, pramukh: { en: "—", kn: "—" }, sangh: { en: "—", kn: "—" } },
         { no: 8, name: { en: "Kannada Rajyotsava Katte", kn: "ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ ಕಟ್ಟೆ" }, pramukh: { en: "—", kn: "—" }, sangh: { en: "—", kn: "—" } },
         { no: 9, name: { en: "Shani Mahatma Temple", kn: "ಶನಿ ಮಹಾತ್ಮ ದೇವಸ್ಥಾನ" }, pramukh: { en: "—", kn: "—" }, sangh: { en: "—", kn: "—" } },
@@ -65,12 +65,12 @@
     },
     {
       id: 3,
-      name: { en: "Bhuthanahalli", kn: "ಭೂತಾನಹಳ್ಳಿ" },
+      name: { en: "Butanahalli", kn: "ಬೂತಾನಹಳ್ಳಿ" },
       palakaru: { en: "Shri Maruti", kn: "ಶ್ರೀ ಮಾರುತಿ" },
       phones: ["8884267692"],
       branches: [],
       upavastis: [
-        { no: 1, name: { en: "Bhuthanahalli", kn: "ಬೂತಾನಹಳ್ಳಿ" }, pramukh: { en: "Hemantha", kn: "ಹೇಮಂತ" }, sangh: { en: "Anjaneya Temple", kn: "ಆಂಜನೇಯ ದೇವಾಲಯ" } },
+        { no: 1, name: { en: "Butanahalli", kn: "ಬೂತಾನಹಳ್ಳಿ" }, pramukh: { en: "Hemantha", kn: "ಹೇಮಂತ" }, sangh: { en: "Anjaneya Temple", kn: "ಆಂಜನೇಯ ದೇವಾಲಯ" } },
         { no: 2, name: { en: "Amruta Nagar", kn: "ಅಮೃತ ನಗರ" }, pramukh: { en: "Muniraj", kn: "ಮುನಿರಾಜ" }, sangh: { en: "Ayyappa Temple", kn: "ಅಯ್ಯಪ್ಪ ದೇವಾಲಯ" } },
         { no: 3, name: { en: "Sheelendra Doddi", kn: "ಶಿಲೀಂದ್ರ ದೊಡ್ಡಿ" }, pramukh: { en: "Raju", kn: "ರಾಜು" }, sangh: { en: "Anganwadi", kn: "ಅಂಗನವಾಡಿ" } },
         { no: 4, name: { en: "Hakkipikki Colony", kn: "ಹಕ್ಕಿಪಿಕ್ಕಿ ಕಾಲೋನಿ" }, pramukh: { en: "Vishnuvardhan", kn: "ವಿಷ್ಣುವರ್ಧನ್" }, sangh: { en: "Govt. School", kn: "ಸರ್ಕಾರಿ ಶಾಲೆ" } },
@@ -249,7 +249,7 @@
     },
     {
       id: 8,
-      name: { en: "Yarandahalli", kn: "ಯರಂಡಹಳ್ಳಿ" },
+      name: { en: "Yarandahalli", kn: "ಯಾರಂಡಹಳ್ಳಿ" },
       palakaru: { en: "Shri Vishwanath", kn: "ಶ್ರೀ ವಿಶ್ವನಾಥ್" },
       phones: ["9739141376"],
       branches: [
@@ -286,14 +286,14 @@
         { no: 5, name: { en: "Icon Layout", kn: "ಐಕಾನ್ ಲೇಔಟ್" }, pramukh: { en: "Thirumalesh", kn: "ತಿರುಮಲೇಶ್" }, sangh: { en: "Basketball Court", kn: "ಬ್ಯಾಸ್ಕೆಟ್ ಬಾಲ್ ಅಂಗಣ" }, mapLink: "https://maps.app.goo.gl/1wRfLcprSKe5sg7T7" },
         { no: 6, name: { en: "NR Layout", kn: "ಎನ್ ಆರ್ ಲೇಔಟ್" }, pramukh: { en: "Jattappa", kn: "ಜಟ್ಟಪ್ಪ" }, sangh: { en: "Play Ground", kn: "ಆಟದ ಮೈದಾನ" }, mapLink: "https://maps.app.goo.gl/DZXTxzjTM7Y3zq6n7?g_st=aw" },
         { no: 7, name: { en: "Kailasana Halli", kn: "ಕ್ಯಾಲಾಸನ ಹಳ್ಳಿ" }, pramukh: { en: "Duryodhana", kn: "ದುರ್ಯೋಧನ" }, sangh: { en: "Layout", kn: "ಲೇಔಟ್" }, mapLink: "https://maps.app.goo.gl/DKxqk3piRq8zZhoc8?g_st=aw" },
-        { no: 8, name: { en: "Yarandahalli - Anganwadi", kn: "ಯರಂಡಹಳ್ಳಿ - ಅಂಗನವಾಡಿ" }, pramukh: { en: "Jayan", kn: "ಜಯನ್" }, sangh: { en: "NR Mart", kn: "ಎನ್ ಆರ್ ಮಾರ್ಟ್" }, mapLink: "https://maps.app.goo.gl/cRurdZRA1gaqb5pC6?g_st=aw" },
-        { no: 9, name: { en: "Yarandahalli - Streeshakti Bhavan", kn: "ಯರಂಡಹಳ್ಳಿ - ಸ್ತ್ರೀಶಕ್ತಿ ಭನ" }, pramukh: { en: "Lakshmikanth", kn: "ಲಕ್ಷ್ಮೀಕಾಂತ" }, sangh: { en: "RK Township", kn: "ಆರ್ ಕೆ ಟೌನ್ ಶಿಪ್" }, mapLink: "https://maps.app.goo.gl/4mHUU36rNtkjfGGp9?g_st=aw" },
+        { no: 8, name: { en: "Yarandahalli - Anganwadi", kn: "ಯಾರಂಡಹಳ್ಳಿ - ಅಂಗನವಾಡಿ" }, pramukh: { en: "Jayan", kn: "ಜಯನ್" }, sangh: { en: "NR Mart", kn: "ಎನ್ ಆರ್ ಮಾರ್ಟ್" }, mapLink: "https://maps.app.goo.gl/cRurdZRA1gaqb5pC6?g_st=aw" },
+        { no: 9, name: { en: "Yarandahalli - Streeshakti Bhavan", kn: "ಯಾರಂಡಹಳ್ಳಿ - ಸ್ತ್ರೀಶಕ್ತಿ ಭನ" }, pramukh: { en: "Lakshmikanth", kn: "ಲಕ್ಷ್ಮೀಕಾಂತ" }, sangh: { en: "RK Township", kn: "ಆರ್ ಕೆ ಟೌನ್ ಶಿಪ್" }, mapLink: "https://maps.app.goo.gl/4mHUU36rNtkjfGGp9?g_st=aw" },
         { no: 10, name: { en: "Shri Rampura", kn: "ಶ್ರೀ ರಾಂಪುರ" }, pramukh: { en: "Karunakara", kn: "ಕರುಣಾಕರ" }, sangh: { en: "Anjaneya Temple", kn: "ಆಂಜನೇಯ ದೇವಾಲಯ" }, mapLink: "https://maps.app.goo.gl/uWZCBXMsDciUQ2L26?g_st=aw" },
       ],
     },
     {
       id: 9,
-      name: { en: "Hennagara", kn: "ಹೆನ್ನಗರ" },
+      name: { en: "Hennagara", kn: "ಹೆನ್ನಾಗರ" },
       palakaru: {
         en: "Shri Girish / Shri Krishna Sahu",
         kn: "ಶ್ರೀ ಗಿರೀಶ್ / ಶ್ರೀ ಕೃಷ್ಣ ಸಾಹು",
@@ -361,15 +361,15 @@
   ];
 
   const SUMMARY = [
-    { id: 1, loc: { en: "Pillaganahalli", kn: "ಪಿಲ್ಲಗನಹಳ್ಳಿ" }, s: 1, m: 0 },
+    { id: 1, loc: { en: "Pilligaanahalli", kn: "ಪಿಲ್ಲಿಗಾನಹಳ್ಳಿ" }, s: 1, m: 0 },
     { id: 2, loc: { en: "Weavers Colony", kn: "ವೀವರ್ಸ್ ಕಾಲೋನಿ" }, s: 1, m: 0 },
-    { id: 3, loc: { en: "Bhuthanahalli", kn: "ಬೂತಾನಹಳ್ಳಿ" }, s: 0, m: 0 },
+    { id: 3, loc: { en: "Butanahalli", kn: "ಬೂತಾನಹಳ್ಳಿ" }, s: 0, m: 0 },
     { id: 4, loc: { en: "Bannerughatta", kn: "ಬನ್ನೇರುಘಟ್ಟ" }, s: 3, m: 0 },
     { id: 5, loc: { en: "Mantapa", kn: "ಮಂಟಪ" }, s: 1, m: 0 },
     { id: 6, loc: { en: "Venugopala", kn: "ವೇಣುಗೋಪಾಲ" }, s: 2, m: 2 },
     { id: 7, loc: { en: "Someshwara", kn: "ಸೋಮೇಶ್ವರ" }, s: 2, m: 0 },
-    { id: 8, loc: { en: "Yarandahalli", kn: "ಯರಂಡಹಳ್ಳಿ" }, s: 2, m: 1 },
-    { id: 9, loc: { en: "Hennagara", kn: "ಹೆನ್ನಗರ" }, s: 0, m: 2 },
+    { id: 8, loc: { en: "Yarandahalli", kn: "ಯಾರಂಡಹಳ್ಳಿ" }, s: 2, m: 1 },
+    { id: 9, loc: { en: "Hennagara", kn: "ಹೆನ್ನಾಗರ" }, s: 0, m: 2 },
     { id: 10, loc: { en: "Hulimangala", kn: "ಹುಲಿಮಂಗಲ" }, s: 1, m: 0 },
   ];
 
